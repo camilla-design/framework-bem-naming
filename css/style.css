@@ -1,0 +1,171 @@
+.nav {
+  background: #e8e8e8;
+  padding: 1rem 0;
+}
+
+.nav__container {
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .nav__container {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.nav__link {
+  color: #4b4b4b;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.nav__link:last-of-type {
+  margin-right: 0;
+}
+
+.nav__link--active {
+  color: #e5689d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #f7f7f7;
+  font-family: "open sans", sans-serif;
+  color: white;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid__item {
+  margin: 0.5em;
+  max-width: 250px;
+}
+
+.container, .nav__container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.email-form {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .email-form {
+    margin-top: 0;
+  }
+}
+
+.email-form__input {
+  height: 30px;
+  border: none;
+  padding: 0.5em;
+}
+
+@media (min-width: 768px) {
+  .email-form__input {
+    width: 285px;
+  }
+}
+
+.email-form__button {
+  background: #e5689d;
+  color: white;
+  height: 30px;
+  border: none;
+  width: 98px;
+}
+
+.footer {
+  background: #e8e8e8;
+  flex-shrink: 0;
+  color: #4b4b4b;
+  padding: 1rem;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__links {
+  margin-top: 0.5rem;
+  color: #e5689d;
+}
+
+.footer__link {
+  color: #e5689d;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  color: #a4c799;
+}
+
+.circles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 220px);
+  margin: 2rem 1rem;
+  grid-gap: 1.5rem;
+  justify-content: center;
+}
+
+.circles__item, .circles__item--green, .circles__item--pink {
+  border-radius: 100%;
+  border: 2px solid #4b4b4b;
+  padding-top: 100%;
+  background: white;
+  position: relative;
+}
+
+.circles__item:before, .circles__item--green:before, .circles__item--pink:before {
+  content: "White";
+  position: absolute;
+  color: #4b4b4b;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.9rem;
+}
+
+.circles__item--green {
+  background: #a4c799;
+  border: none;
+}
+
+.circles__item--green:before {
+  content: "Green";
+  color: white;
+}
+
+.circles__item--pink {
+  border: none;
+  background: #e5689d;
+}
+
+.circles__item--pink:before {
+  content: "Pink";
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
